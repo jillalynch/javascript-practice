@@ -1,23 +1,8 @@
 var libros = {
-
-    // Instantiating a new object
-    book: new Book({
-      title: "Robot Dreams",
-      author: "Isaac Asimov",
-      numPages: '320'
-    }),
-
-    // Instantiating a new object
-    paperbackbook: new Paperback({
-      title: "Jaws",
-      author: "Peter Benchley",
-      numPages: 99
-    }),
-  
   
   init: function() {
-    book.read();
-    paperbackbook.read();
+    this.book.read();
+    this.paperbackbook.read();
   },
   
   Book: function(config) {
@@ -42,6 +27,20 @@ var libros = {
 
   // Extending the Book object
   //Paperback.prototype = Object.create(Book.prototype);
+  
+      // Instantiating a new object
+    book: new Book({
+      title: "Robot Dreams",
+      author: "Isaac Asimov",
+      numPages: '320'
+    }),
+
+    // Instantiating a new object
+    paperbackbook: new Paperback({
+      title: "Jaws",
+      author: "Peter Benchley",
+      numPages: 99
+    }),
 
 };
 
